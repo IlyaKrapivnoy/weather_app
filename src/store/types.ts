@@ -46,3 +46,14 @@ export interface WeatherData {
         deg: number;
     };
 }
+
+export interface WeatherError {
+    cod: string;
+    message: string;
+}
+
+export interface WeatherState {
+    data: WeatherData | null;
+    loading: boolean;
+    error: string;
+}
